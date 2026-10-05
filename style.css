@@ -1,0 +1,106 @@
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-main: #ffffff;
+    --text-sec: #aaaaaa;
+    --accent: #bb86fc;
+    --active-border: #00ff88;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #333;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.unit-card {
+    background-color: var(--card-bg);
+    border-left: 4px solid #333;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.unit-card:hover {
+    transform: translateX(10px);
+    background-color: #2a2a2a;
+}
+
+.unit-card.active {
+    border-left-color: var(--active-border);
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.2);
+}
+
+.unit-icon {
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.unit-info h3 {
+    margin: 0 0 5px 0;
+    color: var(--accent);
+}
+
+.unit-type {
+    color: var(--text-sec);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+.unit-desc {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--accent);
+    color: #000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-sec);
+    font-size: 0.8rem;
+    border-top: 1px solid #333;
+}
